@@ -95,6 +95,9 @@
   .bar div{padding:12px 14px}
   .bar .m1{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#1A1203;text-align:center}
   .bar .m2{background:rgba(245,166,35,.08);color:var(--gold)}
+  .bar .m0{background:transparent}
+  .bar.bar2{margin-top:8px;grid-template-columns:1fr}
+  .bar.bar2 .m2{background:rgba(245,166,35,.14)}
   .bar-legend{display:flex;justify-content:space-between;gap:12px;margin-top:8px;color:var(--mut);font-size:13px}
 
   .check{list-style:none;display:grid;gap:12px;margin-top:20px}
@@ -275,19 +278,20 @@
   <div class="wrap">
     <div class="eyebrow rv">Plano de aceleração</div>
     <h2 class="rv d1">12 meses com a gente <span class="grad">do seu lado</span>.</h2>
-    <p class="lead rv d2">O primeiro mês é individual, para destravar o começo. Depois, mais 11 meses de acompanhamento em grupo.</p>
+    <p class="lead rv d2">No primeiro mês, encontros individuais para destravar o começo. E desde o primeiro mês você já participa do acompanhamento em grupo, que segue pelos 12 meses.</p>
 
     <div class="tl">
       <div class="ph rv d1"><div class="dot">1</div><div class="card"><span class="when">Primeiro mês · Encontro 1</span><h3>Entender as necessidades da sua empresa</h3><p>A gente conhece o seu negócio por inteiro: como o cliente chega, como você vende e cobra, quem trabalha com você, as ferramentas que usa e a dor que mais pesa hoje.</p></div></div>
       <div class="ph between rv d1"><div class="dot"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></svg></div><div class="card"><span class="when">Nosso time trabalha</span><h3>A gente monta o seu time de IA</h3><p>Com o que saiu do primeiro encontro, o time cria a estrutura da sua empresa e o primeiro agente apontado para a sua maior dor.</p></div></div>
       <div class="ph rv d2"><div class="dot">2</div><div class="card"><span class="when">7 dias depois · Encontro 2</span><h3>Instalação</h3><p>Nós instalamos tudo para você, ligamos o primeiro agente e você sai com o plano de ação para os próximos dias.</p></div></div>
       <div class="ph rv d3"><div class="dot">3</div><div class="card"><span class="when">Encontros 3 e 4 · Individuais</span><h3>Acompanhamento individual no início</h3><p>Mais dois encontros só com você: o que andou, o que travou e o ajuste, para ajudar nesse começo.</p></div></div>
-      <div class="ph rv d4"><div class="dot big"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14c2.8 0 5 2.2 5 5"/></svg></div><div class="card"><span class="when grp">Mais 11 meses · Em grupo</span><h3>Acompanhamento em grupo</h3><p>Depois disso, mais 11 meses de acompanhamento em grupo, com encontros ao vivo, plantão aos sábados para tirar dúvidas e as novidades e estruturas novas que forem saindo.</p></div></div>
+      <div class="ph rv d4"><div class="dot big"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14c2.8 0 5 2.2 5 5"/></svg></div><div class="card"><span class="when grp">Do mês 1 ao mês 12 · Em grupo</span><h3>Acompanhamento em grupo</h3><p>Desde o primeiro mês, junto com os encontros individuais, você já participa do acompanhamento em grupo. Ele segue até o mês 12, com encontros ao vivo, plantão aos sábados para tirar dúvidas e as novidades e estruturas novas que forem saindo.</p></div></div>
     </div>
 
     <div class="rv d2">
-      <div class="bar" aria-hidden="true"><div class="m1">Mês 1</div><div class="m2">Meses 2 a 12 · acompanhamento em grupo</div></div>
-      <div class="bar-legend"><span>4 encontros individuais</span><span>11 meses em grupo</span></div>
+      <div class="bar" aria-hidden="true"><div class="m1">Mês 1</div><div class="m0"></div></div>
+      <div class="bar bar2" aria-hidden="true"><div class="m2">Meses 1 a 12 · acompanhamento em grupo</div></div>
+      <div class="bar-legend"><span>4 encontros individuais no mês 1</span><span>12 meses em grupo</span></div>
     </div>
   </div>
 </section>
