@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Business Accelerator | Me Ensina AI</title>
+<meta name="description" content="Nós criamos o seu time de IA e deixamos tudo pronto, com a gente do lado, por 12 meses. Veja como funciona o Business Accelerator.">
+<meta property="og:title" content="Business Accelerator | Me Ensina AI">
+<meta property="og:description" content="Nós criamos o seu time de IA e deixamos tudo pronto, com a gente do lado, por 12 meses.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0A0A0F">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314141d'/%3E%3Cpath d='M36 8 18 36h12l-4 20 20-30H34z' fill='%23F5A623'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --bg:#0A0A0F; --bg2:#12121A; --card:#14141d; --line:rgba(255,255,255,.08);
+    --gold:#F5A623; --gold2:#FFCA50; --gold3:#E8961E; --txt:#F4F4F7; --mut:#9898AA; --mut2:#65657A;
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+    --r:20px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:Inter,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;background:var(--bg);color:var(--txt);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  body::before{content:"";position:fixed;inset:0;z-index:-1;background:
+    radial-gradient(900px 600px at 85% -10%,rgba(245,166,35,.14),transparent 60%),
+    radial-gradient(700px 520px at -10% 45%,rgba(245,166,35,.07),transparent 60%),
+    radial-gradient(700px 500px at 100% 100%,rgba(255,202,80,.06),transparent 60%),var(--bg)}
+  body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.35;
+    background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:56px 56px;
+    -webkit-mask-image:radial-gradient(ellipse at 50% 30%,#000 30%,transparent 75%);mask-image:radial-gradient(ellipse at 50% 30%,#000 30%,transparent 75%)}
+  a{color:inherit}
+  .wrap{width:min(1080px,100% - 40px);margin-inline:auto}
+  header.top{position:fixed;top:0;left:0;right:0;z-index:20;padding:14px 0;background:linear-gradient(var(--bg),rgba(10,10,15,0))}
+  header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px}
+  .brand svg{width:30px;height:30px}
+  .brand small{display:block;font-family:var(--mono);font-weight:500;color:var(--mut);font-size:10.5px;letter-spacing:1.4px;text-transform:uppercase}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:700;text-decoration:none;border-radius:999px;transition:transform .2s ease,box-shadow .2s ease;cursor:pointer;border:0}
+  .btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#1A1203;box-shadow:0 10px 30px rgba(245,166,35,.32)}
+  .btn-gold:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(245,166,35,.45)}
+  .btn svg{width:20px;height:20px;flex:none}
+  .btn-sm{padding:10px 16px;font-size:14px}
+  .btn-lg{padding:18px 30px;font-size:18px}
+  section.slide{min-height:100vh;min-height:100svh;display:flex;align-items:center;padding:110px 0 120px;position:relative}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+  .eyebrow::before{content:"";width:22px;height:2px;background:var(--gold);border-radius:2px}
+  h1{font-size:clamp(36px,6.4vw,70px);line-height:1.04;letter-spacing:-1.4px;font-weight:800}
+  h2{font-size:clamp(28px,4.6vw,50px);line-height:1.08;letter-spacing:-.9px;font-weight:800;margin-bottom:16px}
+  .gold{color:var(--gold)}
+  .grad{background:linear-gradient(120deg,var(--gold3),var(--gold) 40%,var(--gold2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .lead{font-size:clamp(17px,2.1vw,21px);color:var(--mut);max-width:660px;margin-top:18px}
+  .grid2{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+  .card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.012)),var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+  .ico{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:rgba(245,166,35,.1);border:1px solid rgba(245,166,35,.28);margin-bottom:14px}
+  .ico svg{width:24px;height:24px;stroke:var(--gold);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .card h3{font-size:18px;margin-bottom:6px;line-height:1.3}
+  .card p{color:var(--mut);font-size:15px}
+  .cards{display:grid;gap:16px;grid-template-columns:repeat(3,1fr);margin-top:34px}
+  .cards.two{grid-template-columns:repeat(2,1fr)}
+  .cards.four{grid-template-columns:repeat(4,1fr)}
+  .label{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:1.6px;text-transform:uppercase;color:var(--gold);margin-bottom:8px;display:block}
+  .scroll-hint{position:absolute;bottom:96px;left:50%;transform:translateX(-50%);color:var(--mut);font-size:13px;display:flex;flex-direction:column;align-items:center;gap:6px}
+  .scroll-hint span{width:22px;height:34px;border:2px solid var(--mut);border-radius:12px;position:relative}
+  .scroll-hint span::after{content:"";position:absolute;left:50%;top:6px;width:4px;height:7px;margin-left:-2px;background:var(--gold);border-radius:2px;animation:wheel 1.6s infinite}
+  @keyframes wheel{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(12px)}}
+
+  /* Ilustração: dono sobrecarregado */
+  .chaos{position:relative;aspect-ratio:1/1;max-width:440px;margin-inline:auto;width:100%}
+  .chaos .core{position:absolute;inset:32%;border-radius:50%;background:radial-gradient(circle at 35% 30%,#24242f,#14141d);border:1px solid var(--line);display:grid;place-items:center;box-shadow:0 0 0 14px rgba(255,255,255,.02),0 0 60px rgba(245,166,35,.12)}
+  .chaos .core svg{width:56%;height:56%}
+  .bubble{position:absolute;padding:9px 13px;border-radius:14px;background:var(--card);border:1px solid var(--line);font-size:13px;font-weight:600;white-space:nowrap;display:flex;align-items:center;gap:7px;animation:float 5s ease-in-out infinite}
+  .bubble i{width:8px;height:8px;border-radius:50%;background:#FF5A5A;flex:none;box-shadow:0 0 10px #FF5A5A}
+  .bubble.y i{background:var(--gold);box-shadow:0 0 10px var(--gold)}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+
+  .org{position:relative;max-width:470px;margin-inline:auto;width:100%}
+  .org svg{width:100%;height:auto;display:block}
+
+  /* Como funciona: 4 pontos */
+  .how{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:36px}
+  .how .card{position:relative;padding-top:56px}
+  .how .ord{position:absolute;top:18px;left:24px;font-family:var(--mono);font-weight:700;font-size:15px;color:var(--gold)}
+
+  /* Plano de aceleração: linha do tempo */
+  .tl{position:relative;margin-top:40px;display:grid;gap:18px}
+  .tl::before{content:"";position:absolute;left:27px;top:12px;bottom:12px;width:2px;background:linear-gradient(var(--gold),rgba(245,166,35,.12))}
+  .ph{display:grid;grid-template-columns:56px 1fr;gap:18px;align-items:start}
+  .dot{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:19px;background:var(--bg2);border:2px solid var(--gold);color:var(--gold);position:relative;z-index:1;box-shadow:0 0 0 6px var(--bg)}
+  .dot.big{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#1A1203;border:0}
+  .dot svg{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .ph .card{padding:20px 22px}
+  .ph .when{display:inline-flex;gap:8px;align-items:center;font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--gold);background:rgba(245,166,35,.1);border:1px solid rgba(245,166,35,.3);padding:4px 10px;border-radius:999px;margin-bottom:10px}
+  .ph .when.grp{color:#1A1203;background:var(--gold);border-color:var(--gold)}
+  .ph.between .card{background:transparent;border-style:dashed}
+  .bar{margin-top:30px;display:grid;grid-template-columns:1fr 11fr;border-radius:14px;overflow:hidden;border:1px solid var(--line);font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase}
+  .bar div{padding:12px 14px}
+  .bar .m1{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#1A1203;text-align:center}
+  .bar .m2{background:rgba(245,166,35,.08);color:var(--gold)}
+  .bar-legend{display:flex;justify-content:space-between;gap:12px;margin-top:8px;color:var(--mut);font-size:13px}
+
+  .check{list-style:none;display:grid;gap:12px;margin-top:20px}
+  .check li{display:flex;gap:12px;align-items:flex-start;font-size:16px}
+  .check li::before{content:"";flex:none;width:22px;height:22px;margin-top:2px;border-radius:50%;background:rgba(245,166,35,.14) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12.5l4 4 8-9' fill='none' stroke='%23F5A623' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/14px no-repeat;border:1px solid rgba(245,166,35,.4)}
+  .areas{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+  .areas span{font-size:13px;font-weight:600;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.04);border:1px solid var(--line)}
+  .stack{display:grid;gap:16px}
+  .upgrade{border-color:rgba(245,166,35,.35);background:linear-gradient(135deg,rgba(245,166,35,.1),rgba(255,255,255,.015)),var(--card)}
+  .upgrade .pill{display:inline-block;font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:#1A1203;background:var(--gold);padding:4px 10px;border-radius:999px;margin-bottom:10px}
+
+  .final{text-align:center}
+  .final .lead{margin-inline:auto}
+  .final .btn{margin-top:34px}
+  .final .note{margin-top:16px;color:var(--mut);font-size:14px}
+  footer{padding:30px 0 120px;color:var(--mut2);font-size:13px;text-align:center;border-top:1px solid var(--line);font-family:var(--mono);letter-spacing:1px}
+
+  .sticky{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom));transform:translateX(-50%) translateY(160%);z-index:30;transition:transform .35s ease;width:max-content;max-width:calc(100% - 32px)}
+  .sticky.show{transform:translateX(-50%) translateY(0)}
+  .sticky .btn{padding:15px 26px;font-size:16px}
+
+  .dots{position:fixed;right:18px;top:50%;transform:translateY(-50%);z-index:15;display:flex;flex-direction:column;gap:10px}
+  .dots a{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.2);transition:all .25s}
+  .dots a.on{background:var(--gold);height:24px;border-radius:6px}
+
+  .rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+  .rv.in{opacity:1;transform:none}
+  .d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}
+  @media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.bubble{animation:none}html{scroll-behavior:auto}}
+
+  @media (max-width:880px){
+    .grid2{grid-template-columns:1fr;gap:34px}
+    .cards,.cards.four,.how{grid-template-columns:1fr 1fr}
+    .dots{display:none}
+    section.slide{padding:96px 0 110px}
+  }
+  @media (max-width:560px){
+    .cards,.cards.two,.cards.four,.how{grid-template-columns:1fr}
+    .top .btn-sm{display:none}
+    .bubble{font-size:12px;padding:7px 10px}
+    .ph{grid-template-columns:44px 1fr;gap:14px}
+    .dot{width:44px;height:44px;font-size:16px}
+    .dot svg{width:20px;height:20px}
+    .tl::before{left:21px}
+    .btn-lg{padding:17px 24px;font-size:17px;width:100%}
+    .scroll-hint{display:none}
+    .bar{grid-template-columns:1.6fr 8.4fr;font-size:10.5px}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#14141d" stroke="rgba(245,166,35,.35)"/><path d="M36 10 18 36h12l-4 18 20-28H34z" fill="#F5A623"/></svg>
+      <div>Business Accelerator<small>Me Ensina AI</small></div>
+    </div>
+    <a class="btn btn-gold btn-sm js-wa" href="#" target="_blank" rel="noopener">Quero participar</a>
+  </div>
+</header>
+
+<nav class="dots" aria-label="Seções">
+  <a href="#inicio" aria-label="Início"></a>
+  <a href="#problema" aria-label="O problema"></a>
+  <a href="#o-que-e" aria-label="O que é"></a>
+  <a href="#como-funciona" aria-label="Como funciona"></a>
+  <a href="#plano" aria-label="Plano de aceleração"></a>
+  <a href="#o-que-recebe" aria-label="O que você recebe"></a>
+  <a href="#para-quem" aria-label="Para quem é"></a>
+  <a href="#participar" aria-label="Participar"></a>
+</nav>
+
+<main>
+
+<!-- 1. Abertura -->
+<section class="slide" id="inicio">
+  <div class="wrap grid2">
+    <div>
+      <div class="eyebrow rv">Business Accelerator · 12 meses</div>
+      <h1 class="rv d1">Nós criamos o seu <span class="grad">time de IA</span> e deixamos tudo pronto.</h1>
+      <p class="lead rv d2">Com a gente do lado, por 12 meses. Você só conversa com o seu time, em português, e aprova o trabalho pronto. Não precisa entender de tecnologia.</p>
+      <div class="rv d3" style="margin-top:30px"><a class="btn btn-gold btn-lg js-wa" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.4-.3Z"/></svg>Quero participar</a></div>
+    </div>
+    <div class="org rv d2" aria-hidden="true">
+      <svg viewBox="0 0 440 420">
+        <defs>
+          <linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#E8961E"/><stop offset="1" stop-color="#FFCA50"/></linearGradient>
+          <filter id="glow"><feGaussianBlur stdDeviation="10"/></filter>
+        </defs>
+        <g font-family="Inter,Arial" text-anchor="middle">
+          <rect x="160" y="10" width="120" height="44" rx="22" fill="#14141d" stroke="rgba(255,255,255,.15)"/>
+          <text x="220" y="30" fill="#F4F4F7" font-size="14" font-weight="800">VOCÊ</text>
+          <text x="220" y="46" fill="#9898AA" font-size="10">só conversa, em português</text>
+        </g>
+        <path d="M220 56 v38" stroke="#F5A623" stroke-width="2" stroke-dasharray="4 5"/>
+        <circle cx="220" cy="140" r="58" fill="#F5A623" opacity=".22" filter="url(#glow)"/>
+        <circle cx="220" cy="140" r="48" fill="#14141d" stroke="url(#g1)" stroke-width="3"/>
+        <rect x="194" y="118" width="52" height="40" rx="13" fill="none" stroke="#F5A623" stroke-width="3"/>
+        <circle cx="209" cy="137" r="4.5" fill="#FFCA50"/><circle cx="231" cy="137" r="4.5" fill="#FFCA50"/>
+        <path d="M211 148 q9 5 18 0" stroke="#FFCA50" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <text x="220" y="208" text-anchor="middle" fill="#F5A623" font-size="12" font-weight="700" font-family="ui-monospace,Menlo,monospace" letter-spacing="2">COORDENADOR</text>
+        <g stroke="rgba(245,166,35,.4)" stroke-width="2" fill="none" stroke-dasharray="4 6">
+          <path d="M220 188 L70 300"/><path d="M220 188 L160 330"/><path d="M220 188 L280 330"/><path d="M220 188 L370 300"/>
+          <path d="M220 188 L50 220"/><path d="M220 188 L390 220"/>
+        </g>
+        <g font-family="Inter,Arial" font-size="11.5" font-weight="600" fill="#F4F4F7" text-anchor="middle">
+          <g><circle cx="50" cy="230" r="32" fill="#14141d" stroke="rgba(255,255,255,.18)" stroke-width="1.5"/><text x="50" y="234">Comercial</text></g>
+          <g><circle cx="390" cy="230" r="32" fill="#14141d" stroke="rgba(255,255,255,.18)" stroke-width="1.5"/><text x="390" y="234">Marketing</text></g>
+          <g><circle cx="70" cy="312" r="32" fill="#14141d" stroke="rgba(255,255,255,.18)" stroke-width="1.5"/><text x="70" y="316">Operação</text></g>
+          <g><circle cx="160" cy="352" r="32" fill="#14141d" stroke="rgba(255,255,255,.18)" stroke-width="1.5"/><text x="160" y="356">Financeiro</text></g>
+          <g><circle cx="280" cy="352" r="32" fill="#14141d" stroke="rgba(255,255,255,.18)" stroke-width="1.5"/><text x="280" y="356">Atendimento</text></g>
+          <g><circle cx="370" cy="312" r="32" fill="#14141d" stroke="rgba(255,255,255,.18)" stroke-width="1.5"/><text x="370" y="316">Pessoas</text></g>
+        </g>
+        <g fill="#F5A623"><circle cx="140" cy="248" r="3"/><circle cx="300" cy="248" r="3"/><circle cx="196" cy="262" r="2.5"/><circle cx="246" cy="268" r="2.5"/></g>
+      </svg>
+    </div>
+  </div>
+  <div class="scroll-hint"><span></span>role para ver</div>
+</section>
+
+<!-- 2. O problema -->
+<section class="slide" id="problema">
+  <div class="wrap grid2">
+    <div>
+      <div class="eyebrow rv">O problema</div>
+      <h2 class="rv d1">Você abriu uma empresa. Virou o <span class="grad">gargalo</span> dela.</h2>
+      <p class="lead rv d2">Responder cliente, fazer orçamento, postar nas redes, correr atrás de cobrança. Tudo passa por você, e quase não sobra tempo para fazer a empresa crescer.</p>
+      <div class="cards two rv d3">
+        <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Sem tempo</h3><p>O dia acaba no operacional e o estratégico fica para depois.</p></div>
+        <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3 3 20h18L12 3z"/><path d="M12 10v4M12 17h.01"/></svg></div><h3>Sozinho trava</h3><p>Por onde começar, o cuidado com os dados do cliente e o agente que amanhã esquece a sua empresa.</p></div>
+      </div>
+    </div>
+    <div class="chaos rv d2" aria-hidden="true">
+      <div class="core">
+        <svg viewBox="0 0 100 100"><circle cx="50" cy="36" r="16" fill="none" stroke="#9898AA" stroke-width="4"/><path d="M20 86c4-18 16-26 30-26s26 8 30 26" fill="none" stroke="#9898AA" stroke-width="4" stroke-linecap="round"/><path d="M43 44q7-4 14 0" fill="none" stroke="#9898AA" stroke-width="3" stroke-linecap="round"/></svg>
+      </div>
+      <div class="bubble" style="top:6%;left:4%"><i></i>Orçamento atrasado</div>
+      <div class="bubble y" style="top:14%;right:0;animation-delay:.6s"><i></i>Cliente esperando resposta</div>
+      <div class="bubble" style="top:46%;left:-2%;animation-delay:1.2s"><i></i>Cobrança pendente</div>
+      <div class="bubble y" style="top:52%;right:-2%;animation-delay:1.8s"><i></i>Post da semana</div>
+      <div class="bubble" style="bottom:12%;left:8%;animation-delay:2.4s"><i></i>Agenda da equipe</div>
+      <div class="bubble y" style="bottom:4%;right:6%;animation-delay:3s"><i></i>Planilha do mês</div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. O que é -->
+<section class="slide" id="o-que-e">
+  <div class="wrap">
+    <div class="eyebrow rv">O que é o Business Accelerator</div>
+    <h2 class="rv d1">E se o caminho já viesse <span class="grad">pronto</span>?</h2>
+    <p class="lead rv d2">No Business Accelerator, o nosso time constrói e instala os agentes de IA na sua empresa. Um agente coordena os outros e te entrega o trabalho pronto para você aprovar. O seu time de pessoas fica livre do repetitivo para focar no que gera receita.</p>
+    <div class="cards">
+      <div class="card rv d1"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></div><h3>A gente entende</h3><p>Um encontro para conhecer as necessidades da sua empresa por inteiro.</p></div>
+      <div class="card rv d2"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 21h18M6 21V10l6-5 6 5v11"/><path d="M10 21v-6h4v6"/></svg></div><h3>A gente cria</h3><p>O seu time de IA, com os seus preços, os seus clientes e o seu jeito de falar.</p></div>
+      <div class="card rv d3"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5"/><path d="M5 21h14"/></svg></div><h3>A gente instala</h3><p>No seu ChatGPT ou Claude, e deixa tudo pronto para usar.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. Como funciona -->
+<section class="slide" id="como-funciona">
+  <div class="wrap">
+    <div class="eyebrow rv">Como funciona</div>
+    <h2 class="rv d1">Nós criamos o seu <span class="grad">time de IA</span>.</h2>
+    <div class="how">
+      <div class="card rv d1"><span class="ord">1º</span><h3>A estrutura pronta</h3><p>O caminho de cada agente, já pensado para o seu serviço.</p></div>
+      <div class="card rv d2"><span class="ord">2º</span><h3>No seu ChatGPT ou Claude</h3><p>Nós instalamos para você e deixamos tudo pronto.</p></div>
+      <div class="card rv d3"><span class="ord">3º</span><h3>Com a sua empresa</h3><p>Os seus preços, os seus clientes e o seu jeito de falar.</p></div>
+      <div class="card rv d4"><span class="ord">4º</span><h3>A gente do lado</h3><p>Encontros em grupo, plantão aos sábados e tira-dúvidas.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. Plano de aceleração -->
+<section class="slide" id="plano">
+  <div class="wrap">
+    <div class="eyebrow rv">Plano de aceleração</div>
+    <h2 class="rv d1">12 meses com a gente <span class="grad">do seu lado</span>.</h2>
+    <p class="lead rv d2">O primeiro mês é individual, para destravar o começo. Depois, mais 11 meses de acompanhamento em grupo.</p>
+
+    <div class="tl">
+      <div class="ph rv d1"><div class="dot">1</div><div class="card"><span class="when">Primeiro mês · Encontro 1</span><h3>Entender as necessidades da sua empresa</h3><p>A gente conhece o seu negócio por inteiro: como o cliente chega, como você vende e cobra, quem trabalha com você, as ferramentas que usa e a dor que mais pesa hoje.</p></div></div>
+      <div class="ph between rv d1"><div class="dot"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></svg></div><div class="card"><span class="when">Nosso time trabalha</span><h3>A gente monta o seu time de IA</h3><p>Com o que saiu do primeiro encontro, o time cria a estrutura da sua empresa e o primeiro agente apontado para a sua maior dor.</p></div></div>
+      <div class="ph rv d2"><div class="dot">2</div><div class="card"><span class="when">7 dias depois · Encontro 2</span><h3>Instalação</h3><p>Nós instalamos tudo para você, ligamos o primeiro agente e você sai com o plano de ação para os próximos dias.</p></div></div>
+      <div class="ph rv d3"><div class="dot">3</div><div class="card"><span class="when">Encontros 3 e 4 · Individuais</span><h3>Acompanhamento individual no início</h3><p>Mais dois encontros só com você: o que andou, o que travou e o ajuste, para ajudar nesse começo.</p></div></div>
+      <div class="ph rv d4"><div class="dot big"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14c2.8 0 5 2.2 5 5"/></svg></div><div class="card"><span class="when grp">Mais 11 meses · Em grupo</span><h3>Acompanhamento em grupo</h3><p>Depois disso, mais 11 meses de acompanhamento em grupo, com encontros ao vivo, plantão aos sábados para tirar dúvidas e as novidades e estruturas novas que forem saindo.</p></div></div>
+    </div>
+
+    <div class="rv d2">
+      <div class="bar" aria-hidden="true"><div class="m1">Mês 1</div><div class="m2">Meses 2 a 12 · acompanhamento em grupo</div></div>
+      <div class="bar-legend"><span>4 encontros individuais</span><span>11 meses em grupo</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. O que você recebe -->
+<section class="slide" id="o-que-recebe">
+  <div class="wrap grid2">
+    <div>
+      <div class="eyebrow rv">O que você recebe</div>
+      <h2 class="rv d1">O seu time de IA pronto e a <span class="grad">gente do lado</span>.</h2>
+      <ul class="check rv d2">
+        <li>Estruturas prontas de agentes, pensadas para o seu serviço.</li>
+        <li>Um agente coordenador que distribui o seu pedido para o time e te entrega o trabalho pronto.</li>
+        <li>O primeiro agente trabalhando na dor número 1 do seu negócio.</li>
+        <li>Uma memória da empresa: as regras que valem hoje e onde vocês pararam, para a IA não esquecer.</li>
+        <li>As regras da casa respeitadas: o que a IA nunca pode fazer sem o seu ok.</li>
+        <li>Aulas gravadas, passo a passo, e um portal onde o seu agente busca a estrutura e implementa com você.</li>
+        <li>Novidades por 12 meses: estruturas novas e atualizações.</li>
+        <li>Governança total: tudo fica em contas suas, no ChatGPT ou no Claude.</li>
+      </ul>
+    </div>
+    <div class="stack rv d2">
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg></div>
+        <h3>A sua empresa organizada por áreas</h3>
+        <p>A estrutura nasce organizada como uma empresa de verdade:</p>
+        <div class="areas">
+          <span>Comercial</span><span>Marketing</span><span>Operação</span><span>Financeiro</span><span>Atendimento e pós-venda</span><span>Pessoas</span><span>Administrativo</span><span>Tecnologia</span>
+        </div>
+      </div>
+      <div class="card upgrade">
+        <span class="pill">Opcional</span>
+        <h3>AI Manager</h3>
+        <p>Para quem quer ir além: você pede o que precisa (por exemplo, "toda sexta quero um relatório assim") e o time cria a estrutura pronta para você. A cada 15 dias, vocês definem os números dos próximos 15 dias e conferem se aconteceram.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. Para quem é -->
+<section class="slide" id="para-quem">
+  <div class="wrap">
+    <div class="eyebrow rv">Para quem é</div>
+    <h2 class="rv d1">Feito para o <span class="grad">dono de negócio</span>.</h2>
+    <p class="lead rv d2">Se você toca uma empresa de serviço com time enxuto e ainda faz boa parte do operacional, o Business Accelerator foi pensado para você.</p>
+    <div class="cards four">
+      <div class="card rv d1"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-4 7 4v13"/><path d="M9 12h6M9 16h6"/></svg></div><h3>Empresa de serviço</h3><p>Limpeza, construção, estética, imóveis, alimentação, consultoria e outros.</p></div>
+      <div class="card rv d2"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14c2.8 0 5 2.2 5 5"/></svg></div><h3>Time enxuto</h3><p>Você quer que a equipe renda mais, sem afogar ninguém em tarefa repetitiva.</p></div>
+      <div class="card rv d3"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 18 10 12l4 4 6-8"/><path d="M15 8h5v5"/></svg></div><h3>Quer crescer</h3><p>Seu objetivo é escalar o negócio e ter tempo para o que gera receita.</p></div>
+      <div class="card rv d4"><div class="ico"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></div><h3>Sem saber tecnologia</h3><p>Você só conversa com o seu time, em português. A parte técnica é com a gente.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. Chamada final -->
+<section class="slide final" id="participar">
+  <div class="wrap">
+    <div class="eyebrow rv" style="justify-content:center">Próximo passo</div>
+    <h2 class="rv d1">Pronto para ter o seu <span class="grad">time de IA</span>?</h2>
+    <p class="lead rv d2">Toque no botão e fale com o nosso time no WhatsApp. A gente confirma a sua participação e passa as condições.</p>
+    <div class="rv d3"><a class="btn btn-gold btn-lg js-wa" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.4-.3Z"/></svg>Quero participar</a></div>
+    <p class="note rv d4">Atendimento do suporte da Me Ensina AI pelo WhatsApp.</p>
+  </div>
+</section>
+
+</main>
+
+<footer><div class="wrap">BUSINESS ACCELERATOR · ME ENSINA AI</div></footer>
+
+<div class="sticky" id="sticky"><a class="btn btn-gold js-wa" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.4-.3Z"/></svg>Quero participar</a></div>
+
+<script>
+  // Link do WhatsApp do suporte (508) com a mensagem pronta
+  var WA = "https://wa.me/15088488718?text=Ol%C3%A1%21%20Vi%20a%20apresenta%C3%A7%C3%A3o%20e%20quero%20participar%20do%20Business%20Accelerator.";
+  document.querySelectorAll(".js-wa").forEach(function(a){ a.href = WA; });
+
+  var rvs = document.querySelectorAll(".rv");
+  function revealAll(){ rvs.forEach(function(el){ el.classList.add("in"); }); }
+  if (!("IntersectionObserver" in window) || /[?&]all\b/.test(location.search)) { revealAll(); document.documentElement.style.scrollBehavior="auto"; if(location.hash){ var t=document.querySelector(location.hash); if(t) t.scrollIntoView(); } }
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } });
+  },{threshold:.12});
+  document.querySelectorAll(".rv").forEach(function(el){ io.observe(el); });
+
+  var secs = Array.prototype.slice.call(document.querySelectorAll("section.slide"));
+  var dots = document.querySelectorAll(".dots a");
+  var sticky = document.getElementById("sticky");
+  var final = document.getElementById("participar");
+  function onScroll(){
+    var mid = window.innerHeight/2, idx = 0;
+    secs.forEach(function(s,i){ if(s.getBoundingClientRect().top < mid) idx = i; });
+    dots.forEach(function(d,i){ d.classList.toggle("on", i===idx); });
+    var past = window.scrollY > window.innerHeight*0.6;
+    var atEnd = final.getBoundingClientRect().top < window.innerHeight*0.75;
+    sticky.classList.toggle("show", past && !atEnd);
+  }
+  window.addEventListener("scroll", onScroll, {passive:true});
+  window.addEventListener("resize", onScroll);
+  onScroll();
+</script>
+</body>
+</html>
